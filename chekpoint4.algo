@@ -1,0 +1,16 @@
+ALGORITHM EstPalindrome(gag : chaîne de caractères) : booléen
+VAR
+        longueur <- longueur(gag)
+        Si longueur <= 1
+        Retourner vrai
+    Fin Si
+
+BEGIN
+     Pour i allant de 0 à longueur/2
+        Si gag[i] ≠ gag[longueur - i - 1]
+        Retourner faux
+        Fin Si
+    Fin Pour
+     Retourner vrai
+
+END
